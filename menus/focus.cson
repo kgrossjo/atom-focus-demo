@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable focus': 'focus:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'focus'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'focus:toggle' }
+      ]
+    ]
+  }
+]
